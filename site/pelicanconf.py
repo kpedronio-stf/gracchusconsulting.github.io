@@ -26,5 +26,10 @@ SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+ARTICLE_SAVE_AS = 'content/{slug}.html'
+ARTICLE_URL = 'content/{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+PAGE_URL = '{slug}.html'
+
+# true if you want document-relative URLs when developing
+RELATIVE_URLS = False
