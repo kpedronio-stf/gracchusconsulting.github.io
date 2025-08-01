@@ -22,8 +22,11 @@ jobs:
         with:
           python-version-file: ".python-version"
 
-      - name: Install the project
+      - name: Install the project dependencies
         run: uv sync --locked --all-extras --dev
+
+      - name: Install the gracchus theme
+        run: uv run --directory site/ pelican-themes -i themes/gracchus
 
       - name: Build static content
         run: uv run --directory site/ pelican content
