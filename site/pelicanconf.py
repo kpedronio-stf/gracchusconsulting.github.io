@@ -11,7 +11,7 @@ DEFAULT_LANG = 'en'
 
 THEME = 'gracchus'
 
-# Feed generation is usually not desired when developing
+# Disable all feed generation
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
